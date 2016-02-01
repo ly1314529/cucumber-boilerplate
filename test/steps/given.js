@@ -4,60 +4,76 @@
 
 module.exports = function () {
     this
-        .given(/I open the (url|site) "$string"$/,
-            require('../support/action/openWebsite'))
+       假如(/^用户输入他的名字"(.*?)",密码"(.*?)"重复密码"(.*?)",手机号"(.*?)",短信验证码"(.*?)"$/) do |arg1, arg2, arg3, arg4, arg5|
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the element "$string" is( not)* visible$/,
-            require('../support/check/isVisible'))
+假如(/^用户来到网站,还没有注册$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the element "$string" is( not)* enabled$/,
-            require('../support/check/isEnabled'))
+假如(/^用户输入<名字><密码><重复密码><手机号><短信验证吗>,其中没有填完$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the element "$string" is( not)* selected$/,
-            require('../support/check/checkSelected'))
 
-        .given(/^the checkbox "$string" is( not)* checked$/,
-            require('../support/check/checkSelected'))
+假如(/^用户来到网站"(.*?)",他还没有登录$/) do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^there is (an|no) element "$string" on the page$/,
-            require('../support/check/checkElementExists'))
+假如(/^用户输入名字"(.*?)",密码"(.*?)"$/) do |arg1, arg2|
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the title is( not)* "$string"$/,
-            require('../support/check/checkTitle'))
+假如(/^用户来到网站,还没有登录$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the element "$string" contains( not)* the same text as element "$string"$/,
-            require('../support/check/compareText'))
+假如(/^用户输入<名字><密码>其中信息输入错误$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the (element|inputfield) "$string" does( not)* contain the text "$string"$/,
-            require('../support/check/checkContent'))
+假如(/^用户已进入该网站$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the (element|inputfield) "$string" does( not)* contain any text$/,
-            require('../support/check/checkContent'))
+假如(/^用户已经登陆该网站$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the page url is( not)* "$string"$/,
-            require('../support/check/checkURL'))
+假如(/^用户选择<体验集团><金科\.励生活><(\d+)栋><(\d+)层><(\d+)栋\-(\d+)\-(\d+)号房><张雪><(\d+)>$/) do |arg1, arg2, arg3, arg4, arg5, arg6|
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the( css)* attribute "$string" from element "$string" is( not)* "$string"$/,
-            require('../support/check/checkProperty'))
+假如(/^用户已登录该网站$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the cookie "$string" contains( not)* the value "$string"$/,
-            require('../support/check/checkCookieContent'))
+假如(/^用户输入<物业公司><所在小区><楼栋><楼层><房号><真实姓名><身份证后(\d+)位>其中输入信息错误$/) do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the cookie "$string" does( not)* exist$/,
-            require('../support/check/checkCookieExists'))
 
-        .given(/^the element "$string" is( not)* ([\d]+)px (broad|tall)$/,
-            require('../support/check/checkDimension'))
+假如(/^用户已登录该网站便民服务页面$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^the element "$string" is( not)* positioned at ([\d]+)px on the (x|y) axis$/,
-            require('../support/check/checkOffset'))
 
-        .given(/^I have a screen that is ([\d]+) by ([\d]+) pixels$/,
-            require('../support/action/resizeScreenSize'))
+假如(/^用户已登录该网站的生活服务页面$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
-        .given(/^I have closed all but the first (window|tab)$/,
-            require('../support/action/closeAllButFirstTab'))
 
-        .given(/^a (alertbox|confirmbox|prompt) is( not)* opened$/,
-            require('../support/check/checkModal'));
-};
+假如(/^用户登录该网站的商城页面$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+假如(/^用户点击相应物品会跳转到购买页面$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+假如(/^用户已登录给网站$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
+       
