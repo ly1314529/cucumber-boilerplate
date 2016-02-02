@@ -1,10 +1,10 @@
 module.exports = function (name, password,againword,phone,code, done) {
     this.browser
-        .setValue('url'.name.name)
-       .setValue('url'.password.password)
-       .setValue('url'.againword.againword)
-       .setValue('url'.phone.phone)
-       .setValue('url'.code.code)
-       
+        .set('baseurl'.name.name)
+       .set('baseurl'.password.password)
+       .set('baseurl'.againword.againword)
+       .set('baseurl'.phone.phone)
+       .set('baseurl'.code.code)
+       .click('baseurl'.registerbutton)
         .call(done);
 };
