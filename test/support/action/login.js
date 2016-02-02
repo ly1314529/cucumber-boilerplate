@@ -4,5 +4,8 @@ module.exports = function (name, password, done) {
             name: name,
             password: password
         })
+        
+        
+        .click('baseurl'.loginbutton)
         .call(done);
 };
