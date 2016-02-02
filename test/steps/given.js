@@ -4,9 +4,8 @@
 
 module.exports = function () {
     this
-       假如(/^用户输入他的名字"(.*?)",密码"(.*?)"重复密码"(.*?)",手机号"(.*?)",短信验证码"(.*?)"$/) do |arg1, arg2, arg3, arg4, arg5|
-  pending # express the regexp above with the code you wish you had
-end
+       .given(/^用户输入他的名字"(.*?)",密码"(.*?)"重复密码"(.*?)",手机号"(.*?)",短信验证码"(.*?)"$/) do |arg1, arg2, arg3, arg4, arg5|
+  require()
 
 假如(/^用户来到网站,还没有注册$/) do
   pending # express the regexp above with the code you wish you had
