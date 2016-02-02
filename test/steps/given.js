@@ -4,8 +4,12 @@
 
 module.exports = function () {
     this
-       .given(/^用户输入他的名字"(.*?)",密码"(.*?)"重复密码"(.*?)",手机号"(.*?)",短信验证码"(.*?)"$/) do |arg1, arg2, arg3, arg4, arg5|
-  require()
+    
+     .given(/I open the (url|site) "$string"$/,
+            require('../support/action/openWebsite'))
+       
+      .given(/^用户输入他的名字"(.*?)",密码"(.*?)"重复密码"(.*?)",手机号"(.*?)",短信验证码"(.*?)"$/) do |arg1, arg2, arg3, arg4, arg5|
+  require('../support/action/register')
 
 假如(/^用户来到网站,还没有注册$/) do
   pending # express the regexp above with the code you wish you had
