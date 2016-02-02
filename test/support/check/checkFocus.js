@@ -1,14 +1,12 @@
-module.exports = function (selector, falseCase, done) {
+module.exports = function (falseCase, name, done) {
     this.browser
-        .isExisting(selector + ":focus")
-        .then(function (isExisting) {
+        .getTitle()
+        .then(function (title) {
             if (falseCase) {
-                isExisting.should.not.equal(true, "Expected element to not be focused, but it is");
+                title.should.not.equal(name );
             } else {
-                isExisting.should.equal(true, "Expected element to be focused, but it is not");
+                title.should.equal( name);
             }
-
-            return this;
         })
         .call(done);
 };
