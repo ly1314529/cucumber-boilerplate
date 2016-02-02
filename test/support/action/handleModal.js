@@ -1,16 +1,12 @@
-module.exports = function (action, modalType, done) {
-    var command = 'alert' + action.slice(0, 1).toUpperCase() + action.slice(1);
 
-    /**
-     * Alertboxes can't be dismissed, this causes Chrome to crash during tests
-     */
-    if (modalType === 'alertbox') {
-        command = 'alertAccept';
-    }
 
-    this.browser
-        .then(function () {
-            return this[command]();
-        })
-        .call(done);
-};
+module.exprots = function (login,password,done){
+  return this.browser
+       .pause(5000)
+       .click(lishengghuoPage.signInButton)
+       .setValue(lishenghuoPage.loginInput,login)
+       .setValue(lishenghuoPage.passwordInput,password)
+       .click(lishenghuoPage.signIn2Button)
+       .call(done);
+ };
+
