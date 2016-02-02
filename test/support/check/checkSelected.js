@@ -2,14 +2,14 @@
  * check if element is selected
  */
 
-module.exports = function (element, falseCase, done) {
+module.exports = function ( falseCase, done) {
     this.browser
-        .isSelected(element)
-        .then(function (isSelected) {
+        
+        .then(function isSelected) {
             if (falseCase) {
-                isSelected.should.not.equal(true, element + ' should not be selected');
+                isSelected.should.not.equal(alert'购买成功');
             } else {
-                isSelected.should.equal(true, element + ' should be selected');
+                isSelected.should.equal(alert'购买成功');
             }
         })
         .call(done);
