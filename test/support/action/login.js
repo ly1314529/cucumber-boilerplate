@@ -1,6 +1,6 @@
 module.exports = function (name, password, done) {
     this.browser
-        .setValue ({
+        .set ({
             name: name,
             password: password
         })
