@@ -1,10 +1,10 @@
 
 
-module.exprots = function (login,password,done){
+module.exprots = function (name,password,done){
   return this.browser
-       .pause(5000)
+       
        .click(lishengghuoPage.signInButton)
-       .setValue('baseurl'.loginInput,login)
+       .setValue('baseurl'.loginInput,name)
        .setValue('baseurl'.passwordInput,password)
        .click('baseurl'.signIn2Button)
        .call(done);
